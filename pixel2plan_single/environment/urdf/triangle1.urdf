@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<robot name="Triangle1">
+
+    <link name="base">
+        <contact>
+            <lateral_friction value="1.0"/>
+            <spinning_friction value="1.0"/>
+            <restitution value="0.5"/>
+        </contact>
+        <inertial>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <mass value="999999"/>
+            <inertia ixx="0.2125" ixy="-0.005" ixz="0.0225" iyy="0.205" iyz="0.045" izz="0.0125"/>
+        </inertial>
+        <visual>
+            <geometry>
+                <mesh filename="triangle1.dae" scale="10 10 10"/>
+            </geometry>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <material name="black">
+                <color rgba="0.2 0.2 0.2 1"/>
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                 <mesh filename="triangle1.dae" scale="10 10 50"/>
+            </geometry>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+        </collision>
+	</link>
+
+</robot>

@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<robot name="plane">
+    <material name="white">
+        <color rgba="1 1 1 1"/>
+    </material>
+    <link name="plane">
+        <contact>
+            <lateral_friction value="1"/>
+            <spinning_friction value="1.0"/>
+            <restitution value="0.5"/>
+        </contact>
+        <inertial>
+            <origin rpy="0 0 0" xyz="0 0 -0.005"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.005"/>
+            <geometry>
+                <box size="20 20 0.01"/>
+            </geometry>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 -0.005"/>
+            <geometry>
+                <box size="20 20 0.01"/>
+            </geometry>
+        </collision>
+    </link>
+</robot>
+
